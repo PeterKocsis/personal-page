@@ -1,0 +1,51 @@
+@use "../abstracts/variables" as *;
+
+.proficient-skills {
+  font-size: $font-size;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.familiar-skills {
+  font-size: $font-size-xs;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  list-style: none;
+  font-style: italic;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skill-card {
+    padding: 3.2rem;
+    margin: -3.2rem;;
+    border-radius: 0.8rem;
+    // background-color: #ffa;
+    color: #000;
+    font-size: $font-size-small;
+
+    h3 {
+        font-size: $h3-font-size;
+        margin-bottom: 1.6rem;
+    }
+    
+    &:hover {
+        // background-color: #ffb;
+        // color: white;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.skills {
+  padding: 0.6rem 1.2rem;
+  border-radius: 1.6rem;
+  background-color: gray;
+  color: white;
+}

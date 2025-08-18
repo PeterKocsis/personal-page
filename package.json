@@ -1,0 +1,34 @@
+{
+  "name": "personal-page",
+  "version": "1.0.0",
+  "description": "My personal page for basic information and presenting my expertise in as Software Developer. Containing short bio, short work history, full CV, and projects and training pages too.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass:css",
+    "watch:sass": "sass --watch sass:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterKocsis/personal-page.git"
+  },
+  "keywords": [
+    "CV",
+    "Kocsis",
+    "Peter",
+    "work",
+    "history",
+    "software",
+    "frontend",
+    "web",
+    "developer"
+  ],
+  "author": "Peter Kocsis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PeterKocsis/personal-page/issues"
+  },
+  "homepage": "https://github.com/PeterKocsis/personal-page#readme",
+  "devDependencies": {
+    "sass": "^1.90.0"
+  }
+}

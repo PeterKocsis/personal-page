@@ -1,0 +1,24 @@
+@use "abstracts/_variables" as *;
+@use "abstracts/_mixins" as *;
+@use "abstracts/_functions" as *;
+
+@use "base/animations" as *;
+@use "base/typography" as *;
+@use "base/utilities" as *;
+@use "base/_base" as *;
+
+@use "components/additional" as *;
+@use "components/section-title" as *;
+@use "components/navigation" as *;
+@use "components/work-history-items" as *;
+@use "components/work-history-item" as *;
+@use "components/courses" as *;
+@use "components/course" as *;
+@use "components/skill-groups" as *;
+@use "components/skill-group" as *;
+@use "components/project-card" as *;
+
+@use "layout/footer" as *;
+@use "layout/header" as *;
+
+@use "pages/home" as *;
