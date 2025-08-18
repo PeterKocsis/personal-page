@@ -1,5 +1,5 @@
 .additional-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-items: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
 }
