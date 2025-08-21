@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as *;
+
+footer {
+  display: flex;
+  margin-bottom: 6.8rem;
+  justify-content: space-between;
+
+  a {
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+.public-links {
+  display: flex;
+  gap: 2rem;
+  align-self: center;
+}
+
+.copyright-text {
+  font-size: $font-size-small;
+  color: $text-color-dark;
+  margin-bottom: 1rem;
+}
+.contact-email {
+  font-size: $font-size-small;
+  color: $text-color-dark;
+  text-decoration: underline;
+}

@@ -20,17 +20,12 @@
 <body class="main-container">
     <nav class="navigation">
         <ul>
-            <li><a href="#bio">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#courses">Courses</a></li>
-        </ul>
-        <ul>
-            <li><a href="">GitHub</a></li>
-            <li><a href="">LinkedIn</a></li>
-            <li><a href="">Boot.Dev</a></li>
+            <li class="nav-element"><a href="#bio">About</a></li>
+            <li class="nav-element"><a href="#experience">Experience</a></li>
+            <li class="nav-element"><a href="#skills">Skills</a></li>
+            <li class="nav-element"><a href="#education">Education</a></li>
+            <li class="nav-element"><a href="#projects">Projects</a></li>
+            <li class="nav-element"><a href="#courses">Courses</a></li>
         </ul>
     </nav>
     <header>
@@ -308,9 +303,9 @@
 
     <div>
         <section id="education">
-            <h2>Education</h2>
+            <h2 class="main-section-title">Education</h2>
             <div class="education-item">
-                <h3 class="secondary-section-title">Master's Degree in Computer Science</h3>
+                <h3>Master's Degree in Computer Science</h3>
                 <p>University of Debrecen <span>(2011)</span></p>
             </div>
         </section>
@@ -381,9 +376,25 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Peter Kocsis. All rights reserved.</p>
-        <p>Created with <span>Visual Studio Code</span>, deployed with <span>Netlify</span></p>
-        <p><a href="mailto:kopemi86@gmail.com">kopemi86@gmail.com</a></p>
+        <div>
+            <p class="copyright-text">&copy; 2025 Peter Kocsis. All rights reserved.</p>
+            <!-- <p>Created with <span>Visual Studio Code</span>, deployed with <span>Netlify</span></p> -->
+            <a class="contact-email" href="mailto:kopemi86@gmail.com">kopemi86@gmail.com</a>
+        </div>
+        <ul class="public-links">
+            <li class="nav-element">
+                <a href="https://github.com/PeterKocsis" target="_blank">
+                    <img src="/img/github-mark-white.png" alt="GitHub" height="30"></a>
+            </li>
+            <li class="nav-element">
+                <a href="https://www.linkedin.com/in/peter-miklos-kocsis" target="_blank">
+                    <img src="/img/InBug-White.png" alt="LinkedIn" height="30"></a>
+            </li>
+            <li class="nav-element">
+                <a href="https://www.boot.dev/u/tragiccoach71" target="_blank">
+                    <img src="/img/bootdev-logo-full-small.webp" alt="Boot.Dev" height="30"></a>
+            </li>
+        </ul>
     </footer>
 
 </body>

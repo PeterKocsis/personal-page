@@ -1,13 +1,17 @@
 @use "../abstracts/variables" as *;
 
 .main-section-title {
-    font-size: $h2-font-size;
+    font-size: 3rem;
     margin-bottom: 4.8rem;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
 }
 
 .secondary-section-title {
     font-size: $h3-font-size;
     margin-bottom: 1.6rem;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
 }

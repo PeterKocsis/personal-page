@@ -14,3 +14,16 @@
     gap: 3.2rem;
   }
 }
+
+.nav-element {
+  a {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: $font-size-small;
+    letter-spacing: 0.2rem;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
