@@ -1,3 +1,4 @@
+@use "sass:color";
 /*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -5,14 +6,41 @@ SPACING SYSTEM (px)
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
+
+//Normal Text 1.6 - 3.2rem
+//For long text could you >2rem
 $font-size-xs: 1.2rem; // Extra small font size
 $font-size-small: 1.4rem; // Smaller font size
 $font-size: 1.6rem; // Base font size
 $font-size-large: 1.8rem; // Larger font size
 $font-size-xt-large: 2rem; // Extra large font size
 
+//Headlines could could be >5rem with weight >600
 $h1-font-size: 4.4rem; // Font size for h1
 $h2-font-size: 3.6rem; // Font size for h2
 $h3-font-size: 2.4rem; // Font size for h3
 $h4-font-size: 2rem; // Font size for h4
+
+$color-gray: #333; // Gray color
+
+$main-color: color.scale(#051650, $lightness: -20%);
+$main-color-hover: #051650;
+$main-color-dark: color.scale($main-color, $lightness: -40%);
+$main-color-darker: color.scale($main-color, $lightness: -20%);
+$main-color-lighter: color.scale($main-color, $lightness: 20%);
+$main-color-light: color.scale($main-color, $lightness: 40%);
+
+$accent-color: #ffef9e; // Accent color
+$accent-color-dark: color.scale($accent-color, $lightness: -40%);
+$accent-color-darker: color.scale($accent-color, $lightness: -20%);
+$accent-color-lighter: color.scale($accent-color, $lightness: 20%);
+$accent-color-light: color.scale($accent-color, $lightness: 40%);
+
+$text-color: color.scale($main-color, $lightness: 90%); // Text color
+$text-color-dark: color.scale($text-color, $lightness: -20%); // Dark text color
+$text-color-light: color.scale(
+  $text-color,
+  $lightness: 20%
+); // Light text color
+$text-color-disabled: #aaa;
 

@@ -17,6 +17,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 12.8rem;
+  background-color: $main-color;
 }
 
 p {
@@ -52,7 +53,7 @@ h4 {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: $text-color;
     font-size: $font-size;
 }
 

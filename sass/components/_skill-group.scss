@@ -12,7 +12,6 @@
 
 .skill-card {
     border-radius: 0.8rem;
-    color: #000;
 
     h3 {
         font-size: $h4-font-size;
@@ -24,8 +23,8 @@
 .skills {
   padding: 0.4rem 0.8rem;
   border-radius: 1.6rem;
-  background-color: gray;
-  color: white;
+  background-color: $accent-color;
+  color: $main-color-dark;
   font-size: $font-size-xs;
   line-height: 1.2;
   

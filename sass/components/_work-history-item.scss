@@ -1,57 +1,60 @@
 @use "../abstracts/variables" as *;
 
 .role-card {
-    display: block;
-    // background-color: $color-light-gray;
-    border-radius: 0.8rem;
-    text-decoration: none;
-    color: black;
-    padding: 1.6rem;
-    margin: -1.6rem;
-    // color: $color-dark-gray;
+  display: block;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  padding: 1.6rem;
+  margin: -1.6rem;
 
-    &:hover {
-        background-color: #ffc;
-        color: #000;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  &:hover {
+    .work-history-item {
+      color: $text-color;
+      .role-header {
+        h4 {
+          color: $accent-color;
+        }
+      }
     }
+    background-color: $main-color-hover;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.3);
+  }
 }
 
-
 .work-history-item {
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
 
-    h3 {
-        font-size: $h3-font-size;
-        line-height: 1.4;
-        font-weight: 600;
-    }
+  h3 {
+    font-size: $h3-font-size;
+    line-height: 1.4;
+    font-weight: 600;
+  }
 
-    p {
-        font-size: $font-size;
-        line-height: 1.6;
-    }
+  p {
+    font-size: $font-size;
+    line-height: 1.6;
+  }
 }
 
 .position {
-    flex: 1;
-    font-size: $font-size;
+  flex: 1;
+  font-size: $font-size;
 }
 
 .position-details {
-    flex: 2;
+  flex: 2;
 }
 
 .roles {
-    display: flex;
-    flex-direction: column;
-    gap: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
 }
 
 .role-header {
-    h4 {
-        line-height: normal;
-    }
+  h4 {
+    line-height: normal;
+  }
 }
