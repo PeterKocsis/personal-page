@@ -4,18 +4,21 @@ footer {
   display: flex;
   margin-bottom: 6.8rem;
   justify-content: space-between;
-
-  a {
-    &:hover {
-      color: $accent-color;
-    }
-  }
 }
 
 .public-links {
   display: flex;
   gap: 2rem;
   align-self: center;
+}
+
+img {
+  transition: transform 0.2s;
+  height: 3rem;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .copyright-text {

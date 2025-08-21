@@ -3,27 +3,30 @@
 .navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: center;
   padding: 3.2rem 0;
+  align-items: center;
   font-size: $font-size-large;
 
   ul {
     list-style: none;
     display: flex;
-    gap: 3.2rem;
   }
 }
 
 .nav-element {
+  padding: 1rem 2rem;
+  line-height: 1;
+  border-radius: 0.8rem;
   a {
     text-decoration: underline;
     text-transform: uppercase;
     font-weight: 600;
     font-size: $font-size-small;
     letter-spacing: 0.2rem;
+
     &:hover {
-      color: $accent-color;
+      font-weight: 800;
     }
   }
 }

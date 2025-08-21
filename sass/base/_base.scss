@@ -55,6 +55,10 @@ a {
   text-decoration: none;
   color: $text-color;
   font-size: $font-size;
+
+  &:hover {
+    color: $accent-color;
+  }
 }
 
 ul {
