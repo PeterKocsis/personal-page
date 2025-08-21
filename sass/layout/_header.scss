@@ -1,8 +1,9 @@
 @use "../abstracts/variables" as *;
+@use "sass:color";
 
 .header-main-content {
     display: flex;
-    gap: 6rem;
+    gap: $section-element-gaps;
 }
 
 .header-introduction {
@@ -13,19 +14,28 @@
     flex: 3;
 
     p {
-        margin-bottom: 2rem;;
+        margin-bottom: $element-gap;
+        line-height: 1.8;
+    }
+
+    strong {
+        color: $text-color-highlight;
     }
 }
 
 .name {
-    font-size: $h2-font-size;
-    letter-spacing: 0px;
-    line-height: 0.9;
+    font-size: $h1-font-size;
+    letter-spacing: 0.1rem;
+    line-height: 1.1;
+    color: $text-color-highlight;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 .subtitle {
     font-size: $h3-font-size;
-    margin-bottom: 1.6rem;
+    margin-bottom: $element-gap;
     line-height: normal;
-    font-weight: 500;
+    font-weight: 600;
+    color: $text-color-highlight;
 }

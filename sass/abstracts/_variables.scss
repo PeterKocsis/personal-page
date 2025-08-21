@@ -36,8 +36,11 @@ $accent-color-darker: color.scale($accent-color, $lightness: -20%);
 $accent-color-lighter: color.scale($accent-color, $lightness: 20%);
 $accent-color-light: color.scale($accent-color, $lightness: 40%);
 
-$text-color: color.scale($main-color, $lightness: 90%); // Text color
+$text-color: color.scale($main-color, $lightness: 85%); // Text color
 $text-color-dark: color.scale($text-color, $lightness: -10%); // Dark text color
-
+$text-color-highlight: color.scale($text-color, $lightness: 30%); // Highlighted text color
 $text-color-disabled: #aaa;
 
+$section-gaps: 12.8rem; // Gap between sections
+$section-element-gaps: 9.6rem; // Gap between elements in a section
+$element-gap: 2rem;
