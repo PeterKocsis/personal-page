@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as *;
+
+.education-item {
+
+}
+
+.education-title {
+    font-size: $h4-font-size;
+    font-weight: 600;
+    color: $text-color-highlight;
+}
+
+.education-institution {
+    font-size: $font-size;
+    color: $text-color;
+    font-weight: 400;
+}
+
+.graduation-year {
+    font-style: italic;
+}
