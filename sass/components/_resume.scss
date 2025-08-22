@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as *;
+
+.resume-section {
+  display: flex;
+  flex-direction: row;
+  gap: $section-gaps;
+}
+
+.experience-section {
+  flex: 2;
+}
+
+.resume-right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: $section-gaps;
+}

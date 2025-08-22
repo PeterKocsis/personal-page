@@ -1,0 +1,86 @@
+@use "../abstracts/variables" as *;
+
+.roles {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: $text-block-gap;
+}
+
+.position-card {
+  display: block;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  padding: 3.2rem;
+  margin: -3.2rem;
+
+  &:hover {
+    .position-item {
+      color: $text-color-highlight;
+      .role-header {
+        h3 {
+          color: $accent-color;
+        }
+      }
+    }
+    background-color: $main-color-hover;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.3);
+  }
+}
+
+.position-item {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+
+  .position-header {
+    flex: 1;
+  }
+
+  .position-details {
+    flex: 2;
+  }
+}
+
+.last-role-title {
+  font-weight: 700;
+  color: $text-color-highlight;
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.no-previous-role-title {
+  margin-bottom: $element-gap;
+}
+
+.previous-role-title {
+  font-weight: 600;
+  color: $text-color-dark;
+  font-size: $font-size-large;
+  line-height: 1.4;
+
+  &:last-child {
+    margin-bottom: $element-gap;
+  }
+}
+
+.workplace-name {
+  font-size: $h4-font-size;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+  color: $text-color-dark;
+}
+
+.workplace-dates {
+  font-size: $font-size-small;
+  color: $text-color-dark;
+  font-style: italic;
+}

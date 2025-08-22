@@ -1,9 +1,9 @@
 @use "../abstracts/variables" as *;
 
-.work-history-items {
+.position-items {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: $component-gaps;
   flex: 2;
   &:hover {
     a {
