@@ -10,19 +10,30 @@
 }
 
 .skill-card {
-    border-radius: 0.8rem;
+  border-radius: 0.8rem;
+  padding: 3.2rem;
+  margin: -3.2rem;
 
-    h3 {
-        font-size: $h4-font-size;
-        font-weight: 500;
-        margin-bottom: 0.8rem;
+  &:hover {
+    // background-color: $main-color-hover;
+    // box-shadow: 0 2px 4px rgb(0, 0, 0, 0.3);
+    .skills {
+      background-color: $accent-color;
+      color: $main-color-dark;
     }
+  }
+
+  h3 {
+    font-size: $h4-font-size;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+  }
 }
 
 .skills {
   padding: 0.4rem 0.8rem;
   border-radius: 1.6rem;
-  background-color: $accent-color;
+  background-color: $text-color-disabled;
   color: $main-color-dark;
   font-size: $font-size-xs;
   line-height: 1.2;
