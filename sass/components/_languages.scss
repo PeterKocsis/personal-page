@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as *;
+
+.language-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+
+.language-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.language-name {
+  font-weight: 600;
+  font-size: $font-size-small;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: $text-color-dark;
+  line-height: 1.3;
+}
+
+.language-level {
+  font-weight: 600;
+  font-size: $font-size-xt-large;
+  color: $text-color-highlight;
+}
