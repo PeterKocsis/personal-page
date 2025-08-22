@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   gap: $text-block-gap;
+  margin-bottom: $element-gap;
 }
 
 .position-card {
@@ -25,8 +26,13 @@
       color: $text-color-highlight;
       .role-header {
         h3 {
-          color: $accent-color;
+          color: $text-color-highlight;
         }
+      }
+
+      .skills {
+        background-color: $accent-color;
+        color: $main-color-dark;
       }
     }
     background-color: $main-color-hover;
