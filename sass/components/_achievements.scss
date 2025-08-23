@@ -8,11 +8,11 @@
 
 
 .achievement-item {
-  &:hover {
-    .achievement-place {
-      color: $accent-color;
+    &:hover {
+        .achievement-category {
+            color: $text-color-highlight;
+        }
     }
-  }
 }
 
 .achievement-badge {
