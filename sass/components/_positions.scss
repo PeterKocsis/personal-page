@@ -1,11 +1,40 @@
 @use "../abstracts/variables" as *;
 
+.position-items {
+  display: flex;
+  flex-direction: column;
+  gap: $component-gaps;
+  flex: 2;
+  &:hover {
+    a {
+      color: $text-color-disabled;
+    }
+
+    .workplace-name {
+      color: $text-color-disabled;
+    }
+
+    .workplace-dates {
+      color: $text-color-disabled;
+    }
+
+    .position-details {
+      .last-role-title {
+        color: $text-color-disabled;
+      }
+
+      .previous-role-title {
+        color: $text-color-disabled;
+      }
+    }
+  }
+}
+
 .roles {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
 }
-
 
 .details {
   display: flex;
@@ -25,9 +54,19 @@
     .position-item {
       color: $text-color-highlight;
       .role-header {
-        h3 {
+        .last-role-title {
           color: $text-color-highlight;
         }
+        .previous-role-title {
+          color: $text-color-dark;
+        }
+      }
+      .workplace-name {
+        color: $text-color-dark;
+      }
+
+      .workplace-dates {
+        color: $text-color-dark;
       }
 
       .skills {
