@@ -1,0 +1,63 @@
+@use "../abstracts/variables" as *;
+
+.achievements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+
+.achievement-item {
+  &:hover {
+    .achievement-place {
+      color: $accent-color;
+    }
+  }
+}
+
+.achievement-badge {
+  display: flex;
+  gap: 2rem;
+  padding: 1.6rem;
+  margin: -1.6rem;
+  border-radius: 0.8rem;
+  &:hover {
+    background-color: $main-color-hover;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.3);
+  }
+}
+
+.achievement-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.achievement-place {
+  font-size: $font-size-xt-large;
+  font-weight: 600;
+  color: $text-color-highlight;
+  align-self: center;
+  justify-content: left;
+  background-color: $main-color-lighter;
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+
+.achievement-category {
+  font-size: $font-size;
+  font-weight: 600;
+  color: $text-color-dark;
+}
+
+.achievement-number-of-participants {
+  font-size: $font-size-small;
+  color: $text-color;
+  font-weight: 600;
+}
+
+.achievement-year {
+  font-style: italic;
+  font-weight: 600;
+  font-size: $font-size-xs;
+  color: $text-color-disabled;
+}
