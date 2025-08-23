@@ -6,20 +6,6 @@ footer {
   justify-content: space-between;
 }
 
-.public-links {
-  display: flex;
-  gap: 2rem;
-  align-self: center;
-}
-
-img {
-  transition: transform 0.2s;
-  height: 2.4rem;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-}
 
 .copyright-text {
   font-size: $font-size-small;
