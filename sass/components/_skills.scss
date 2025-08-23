@@ -1,5 +1,11 @@
 @use "../abstracts/variables" as *;
 
+.skill-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
 .proficient-skills {
   font-size: $font-size;
   font-weight: 500;
@@ -15,8 +21,6 @@
   margin: -3.2rem;
 
   &:hover {
-    // background-color: $main-color-hover;
-    // box-shadow: 0 2px 4px rgb(0, 0, 0, 0.3);
     .skills {
       background-color: $accent-color;
       color: $main-color-dark;
