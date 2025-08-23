@@ -18,15 +18,18 @@
 </head>
 
 <body class="main-container">
-    <nav class="navigation">
-        <ul>
-            <li class="nav-element"><a href="#bio">About</a></li>
-            <li class="nav-element"><a href="#resume">Resume</a></li>
-            <li class="nav-element"><a href="#projects">Projects</a></li>
-            <li class="nav-element"><a href="#courses">Courses</a></li>
-        </ul>
-    </nav>
-    <header>
+    <div class="dark-background">
+        <nav class="navigation centered-content">
+            <ul>
+                <li class="nav-element"><a href="#bio">About</a></li>
+                <li class="nav-element"><a href="#resume">Resume</a></li>
+                <li class="nav-element"><a href="#projects">Projects</a></li>
+                <li class="nav-element"><a href="#courses">Courses</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="centered-content">
         <section id="bio" class="header-main-content">
             <div class="header-introduction">
                 <h1 class="name">Péter Miklós Kocsis</h1>
@@ -34,7 +37,8 @@
                 <p>I see every project as a chance to learn, improve, and create something exceptional.</p>
             </div>
             <div class="header-summary">
-                <p>I am an experienced software engineer with <strong>over 10 years</strong> in the industry, working
+                <p>I am an experienced software engineer with <strong>over 10 years</strong> in the industry,
+                    working
                     across <strong>frontend web
                         development</strong>, <strong>desktop applications</strong>, and <strong>test
                         automation</strong>. In recent years, I have focused on <strong>Angular</strong>
@@ -54,9 +58,7 @@
         </section>
     </header>
 
-
-
-    <section id="resume" class="resume-section">
+    <section id="resume" class="resume-section centered-content">
         <div class="experience-section">
             <h2 class="main-section-title">Experience</h2>
             <div class="position-items">
@@ -90,7 +92,8 @@
                                         <p>I led a company-wide Angular upgrade, ensured
                                             frontend–backend
                                             compatibility,
-                                            and introduced reusable end-to-end testing utilities to improve development
+                                            and introduced reusable end-to-end testing utilities to improve
+                                            development
                                             efficiency.</p>
                                     </div>
                                     <ul class="proficient-skills">
@@ -178,7 +181,8 @@
                                         <p class="previous-role-title">Associate Quality Assurance Engineer</p>
                                     </hgroup>
                                     <div class="details">
-                                        <p>Designed and developed a custom test automation framework for Windows desktop
+                                        <p>Designed and developed a custom test automation framework for Windows
+                                            desktop
                                             applications
                                             using TestStack.White and Microsoft UI Automation, later enhancing it to
                                             support
@@ -188,7 +192,8 @@
                                         <p>Implemented hundreds of end-to-end UI tests covering key workflows
                                             and
                                             critical
-                                            error scenarios, integrated them into the CI/CD pipeline with TeamCity.</p>
+                                            error scenarios, integrated them into the CI/CD pipeline with TeamCity.
+                                        </p>
                                         <p>Conducted regular reviews and updates of test cases to ensure continued
                                             relevance and effectiveness.</p>
                                         <p>Mentored junior QA engineers and provided guidance on best practices.</p>
@@ -224,12 +229,15 @@
                             <div class="roles">
                                 <div class="role">
                                     <header class="role-header">
-                                        <h3 class="last-role-title no-previous-role-title">Junior Software Tester</h3>
+                                        <h3 class="last-role-title no-previous-role-title">Junior Software Tester
+                                        </h3>
                                     </header>
                                     <div class="details">
-                                        <p>Ensured the quality and integration of the SlideManager web app with in-house
+                                        <p>Ensured the quality and integration of the SlideManager web app with
+                                            in-house
                                             products,
-                                            performing primarily manual testing while initiating the development of a
+                                            performing primarily manual testing while initiating the development of
+                                            a
                                             test
                                             automation
                                             system.
@@ -427,7 +435,7 @@
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="centered-content">
         <h2 class="main-section-title">Projects</h2>
         <div class="projects">
             <a class="project-card" href="#">
@@ -452,7 +460,7 @@
         </div>
     </section>
 
-    <section id="courses">
+    <section id="courses" class="centered-content">
         <h2 class="main-section-title">Courses</h2>
         <div class="courses">
             <div class="course">
@@ -490,28 +498,29 @@
         </div>
     </section>
 
-    <footer>
-        <div>
-            <p class="copyright-text">&copy; 2025 Peter Kocsis. All rights reserved.</p>
-            <!-- <p>Created with <span>Visual Studio Code</span>, deployed with <span>Netlify</span></p> -->
-            <a class="contact-email" href="mailto:kopemi86@gmail.com">kopemi86@gmail.com</a>
-        </div>
-        <ul class="public-links">
-            <li>
-                <a href="https://github.com/PeterKocsis" target="_blank">
-                    <img src="/img/github-mark-white.png" alt="GitHub" height="24"></a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/peter-miklos-kocsis" target="_blank">
-                    <img src="/img/InBug-White.png" alt="LinkedIn" height="24"></a>
-            </li>
-            <li>
-                <a href="https://www.boot.dev/u/tragiccoach71" target="_blank">
-                    <img src="/img/bootdev-logo-full-small.webp" alt="Boot.Dev" height="24"></a>
-            </li>
-        </ul>
-    </footer>
-
+    <div class="dark-background">
+        <footer class="centered-content">
+            <div>
+                <p class="copyright-text">&copy; 2025 Peter Kocsis. All rights reserved.</p>
+                <!-- <p>Created with <span>Visual Studio Code</span>, deployed with <span>Netlify</span></p> -->
+                <a class="contact-email" href="mailto:kopemi86@gmail.com">kopemi86@gmail.com</a>
+            </div>
+            <ul class="public-links">
+                <li>
+                    <a href="https://github.com/PeterKocsis" target="_blank">
+                        <img src="/img/github-mark-white.png" alt="GitHub" height="24"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/peter-miklos-kocsis" target="_blank">
+                        <img src="/img/InBug-White.png" alt="LinkedIn" height="24"></a>
+                </li>
+                <li>
+                    <a href="https://www.boot.dev/u/tragiccoach71" target="_blank">
+                        <img src="/img/bootdev-logo-full-small.webp" alt="Boot.Dev" height="24"></a>
+                </li>
+            </ul>
+        </footer>
+    </div>
 </body>
 
 </html>

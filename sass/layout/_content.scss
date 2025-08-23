@@ -1,0 +1,12 @@
+
+@use "../abstracts/variables" as *;
+
+.centered-content {
+    max-width: 110rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.dark-background {
+    background-color: $main-color-dark;
+}
