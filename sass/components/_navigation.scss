@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .floating-navigation {
   position: sticky;
@@ -46,6 +47,13 @@
   }
 }
 
+.social-icon {
+  height: 24px;
+  @include respond-to("tablet-land") {
+    height: 2rem;
+  }
+}
+
 .public-links {
   display: flex;
   gap: $element-gap;
@@ -55,6 +63,10 @@
   .link-item {
     transition: transform 0.2s;
     height: 24px;
+
+    @include respond-to("tablet-land") {
+      height: 2rem;
+    }
 
     &:hover {
       transform: scale(1.2);
