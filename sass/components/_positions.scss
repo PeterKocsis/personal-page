@@ -43,6 +43,10 @@
   margin-bottom: $element-gap;
 }
 
+.open-link-icon {
+  display: none;
+}
+
 .position-card {
   display: block;
   border-radius: 0.8rem;
@@ -56,6 +60,10 @@
       .role-header {
         .last-role-title {
           color: $text-color-highlight;
+        }
+
+        .open-link-icon {
+          display: inline-block;
         }
         .previous-role-title {
           color: $text-color-dark;
@@ -79,6 +87,7 @@
   }
 }
 
+
 .position-item {
   display: flex;
   flex-direction: row;
@@ -99,6 +108,8 @@
   font-size: 3rem;
   line-height: 1;
   margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .no-previous-role-title {
