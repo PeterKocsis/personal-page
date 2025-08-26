@@ -1,0 +1,24 @@
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == 'mobile' {
+        @media (max-width: 32.5em) { // 520px / 16 = 32.5em
+            @content;
+        }
+    } 
+    @else if $breakpoint == 'tablet-port' {
+        @media (max-width: 48.125em) { // 770px / 16 = 48.125em
+            @content;
+        }
+    }
+    @else if $breakpoint == 'tablet-land' {
+        @media (max-width: 58.4375em) { // 935px / 16 = 58.4375em
+            @content;
+        }
+    } 
+    @else if $breakpoint == 'desktop' {
+        @media (max-width: 65.625em) { // 1050px / 16 = 65.625em
+            @content;
+        }
+    } @else {
+        @warn "Unknown breakpoint: #{$breakpoint}. Please use 'mobile', 'tablet-port', 'tablet-land', or 'desktop'.";
+    }
+}
