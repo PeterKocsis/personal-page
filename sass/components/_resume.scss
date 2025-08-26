@@ -40,4 +40,15 @@
       flex: 1 1 30%;
     }
   }
+
+  @include respond-to("mobile") {
+    display: flex;
+    padding-right: 0;
+    flex-direction: column;
+    gap: 4.8rem;
+
+    .additional-section {
+      flex: unset;
+    }
+  }
 }

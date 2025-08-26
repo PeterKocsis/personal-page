@@ -16,6 +16,24 @@
       color: $main-color-dark;
     }
   }
+
+  @include respond-to("mobile") {
+    flex-direction: column;
+    padding: 2.4rem;
+    margin: -2.4rem;
+
+    .project-image {
+      display: block;
+      width: 100%;
+      height: 150px;
+    }
+
+    .project-status {
+      &::after {
+        transform: none;
+      }
+    }
+  }
 }
 
 .project-details {

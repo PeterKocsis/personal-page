@@ -15,6 +15,15 @@
       grid-column: 2;
     }
   }
+
+  @include respond-to("mobile") {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .backend-group-card {
+      grid-column: unset;
+    }
+  }
 }
 
 

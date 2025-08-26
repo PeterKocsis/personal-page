@@ -1,6 +1,6 @@
 @mixin respond-to($breakpoint) {
     @if $breakpoint == 'mobile' {
-        @media (max-width: 32.5em) { // 520px / 16 = 32.5em
+        @media (max-width: 35em) { // 560px / 16 = 35em
             @content;
         }
     } 
