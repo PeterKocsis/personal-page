@@ -4,7 +4,7 @@
 .position-items {
   display: flex;
   flex-direction: column;
-  gap: $component-gaps-large;
+  gap: 8.8rem;
   flex: 2;
   &:hover {
     a {
@@ -60,6 +60,11 @@
   padding: 3.2rem;
   margin: -3.2rem;
   position: relative;
+
+  @include respond-to("tablet-port") {
+    padding: 2.4rem;
+    margin: -2.4rem;
+  }
 
   &:hover {
     .position-item {
