@@ -5,7 +5,7 @@
         }
     } 
     @else if $breakpoint == 'tablet-port' {
-        @media (max-width: 48.125em) { // 770px / 16 = 48.125em
+        @media (max-width: 48.75em) { // 780px / 16 = 48.75em
             @content;
         }
     }

@@ -9,6 +9,11 @@
     @include respond-to("tablet-land") {
         gap: 6.4rem;
     }
+
+    @include respond-to("tablet-port") {
+        flex-direction: column;
+        gap: 8.8rem;
+    }
 }
 
 .header-introduction {

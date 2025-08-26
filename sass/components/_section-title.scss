@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .main-section-title {
     font-size: 3.2rem;
@@ -6,6 +7,18 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
+
+    @include respond-to("tablet-port") {
+        margin-bottom: 2rem;
+    }
+}
+
+.about-section {
+    display: none;
+
+    @include respond-to("tablet-port") {
+        display: block;
+    }
 }
 
 .secondary-section-title {
@@ -18,4 +31,8 @@
 
 .align-with-main-section {
     margin-bottom: 4.8rem;
+
+    @include respond-to("tablet-port") {
+        margin-bottom: 2rem;
+    }
 }

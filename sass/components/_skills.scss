@@ -1,10 +1,23 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 
 .skill-groups {
   display: flex;
   flex-direction: column;
   gap: $component-gaps-medium;
+
+  @include respond-to("tablet-port") {
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    row-gap: 3.2rem;
+    .backend-group-card {
+      grid-column: 2;
+    }
+  }
 }
+
+
 
 .proficient-skills {
   font-size: $font-size;
