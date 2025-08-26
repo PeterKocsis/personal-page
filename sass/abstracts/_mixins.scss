@@ -10,7 +10,7 @@
         }
     }
     @else if $breakpoint == 'tablet-land' {
-        @media (max-width: 58.4375em) { // 935px / 16 = 58.4375em
+        @media (max-width: 55.625em) { // 890px / 16 = 55.625em
             @content;
         }
     } 

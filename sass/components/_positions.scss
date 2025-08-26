@@ -4,7 +4,7 @@
 .position-items {
   display: flex;
   flex-direction: column;
-  gap: $component-gaps;
+  gap: $component-gaps-large;
   flex: 2;
   &:hover {
     a {
@@ -34,7 +34,7 @@
 .roles {
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
+  gap: $component-gaps-small;
 }
 
 .details {

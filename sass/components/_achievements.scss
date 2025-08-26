@@ -1,9 +1,14 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .achievements-list {
     display: flex;
     flex-direction: column;
-    gap: 3.2rem;
+    gap: $component-gaps-small;
+
+    // @include respond-to("tablet-land") {
+    //   gap: 2rem;
+    // }
 }
 
 
@@ -17,7 +22,7 @@
 
 .achievement-badge {
   display: flex;
-  gap: 2rem;
+  gap: $element-gap;
   padding: 1.6rem;
   margin: -1.6rem;
   border-radius: 0.8rem;

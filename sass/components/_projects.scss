@@ -6,7 +6,7 @@
   padding: 3.2rem;
   margin: -3.2rem;
   display: flex;
-  gap: 3.2rem;
+  gap: $component-gaps-small;
 
   &:hover {
     background-color: $main-color-hover;
@@ -21,7 +21,7 @@
 .project-details {
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
+  gap: $component-gaps-small;
   flex: 3;
 }
 

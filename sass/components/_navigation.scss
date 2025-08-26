@@ -21,7 +21,7 @@
 }
 
 .anchor-links {
-  gap: 4.8rem;
+  gap: $component-gaps-medium;
   display: flex;
   align-items: center;
 }
@@ -48,13 +48,13 @@
 
 .public-links {
   display: flex;
-  gap: 2rem;
+  gap: $element-gap;
   align-self: center;
   justify-items: center;
 
   .link-item {
     transition: transform 0.2s;
-    height: 2.4rem;
+    height: 24px;
 
     &:hover {
       transform: scale(1.2);

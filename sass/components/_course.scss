@@ -2,7 +2,7 @@
 
 .courses {
     display: grid;
-    gap: 3.2rem;
+    gap: $component-gaps-small;
     max-width: 100%;
 }
 
@@ -12,7 +12,7 @@
   display: grid;
   grid-template-columns: 2fr 4fr 1fr;
   grid-template-rows: 2fr 1fr;
-  gap: 3.2rem;
+  gap: $component-gaps-small;
 
   &:hover {
     background-color: $main-color-hover;

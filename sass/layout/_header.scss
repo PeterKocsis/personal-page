@@ -1,9 +1,14 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 @use "sass:color";
 
 .header-main-content {
     display: flex;
     gap: $section-element-gaps;
+
+    @include respond-to("tablet-land") {
+        gap: 6.4rem;
+    }
 }
 
 .header-introduction {

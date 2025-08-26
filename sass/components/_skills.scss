@@ -3,7 +3,7 @@
 .skill-groups {
   display: flex;
   flex-direction: column;
-  gap: 4.8rem;
+  gap: $component-gaps-medium;
 }
 
 .proficient-skills {
