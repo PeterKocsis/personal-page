@@ -7,7 +7,7 @@
 }
 
 .course {
-  border-radius: 8px;
+  border-radius: $border-radius;
   padding: 1.6rem;
   display: grid;
   grid-template-columns: 2fr 4fr 1fr;

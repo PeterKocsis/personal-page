@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .project-card {
-  border-radius: 0.8rem;
+  border-radius: $border-radius;
   padding: 3.2rem;
   margin: -3.2rem;
   display: flex;
@@ -37,7 +37,7 @@
 .project-image {
   flex: 1;
   background-color: $main-color-lighter;
-  border-radius: 0.8rem;
+  border-radius: $border-radius;
 }
 
 .project-status {
@@ -55,7 +55,7 @@
     color: $main-color-dark;
     background-color: $accent-color-dark;
     padding: 0.4rem 0.8rem;
-    border-radius: 0.8rem;
+    border-radius: $border-radius;
     border-bottom-right-radius: 0;
   }
 }

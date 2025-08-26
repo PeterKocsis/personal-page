@@ -28,7 +28,7 @@
 
 .nav-element {
   line-height: 1;
-  border-radius: 0.8rem;
+  border-radius: $border-radius;
   transition: transform 0.2s;
   a {
     text-decoration: underline;
