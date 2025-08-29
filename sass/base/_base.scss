@@ -84,3 +84,8 @@ ul {
 [id] {
   scroll-margin-top: 20rem;
 }
+
+::selection {
+  background: $accent-color;
+  color: $main-color;
+}
