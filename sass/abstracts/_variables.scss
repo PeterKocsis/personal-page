@@ -23,7 +23,7 @@ $h4-font-size: 2rem; // Font size for h4
 
 $color-gray: #333; // Gray color
 
-$main-color: color.scale(#051650, $lightness: -20%);
+$main-color: color.scale(#051650, $lightness: -30%);
 $main-color-hover: #051650;
 $main-color-dark: color.scale($main-color, $lightness: -40%);
 $main-color-darker: color.scale($main-color, $lightness: -20%);

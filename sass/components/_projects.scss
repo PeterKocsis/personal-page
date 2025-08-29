@@ -17,20 +17,19 @@
     }
   }
 
-  @include respond-to("mobile") {
+  @include respond-to("tablet-port") {
     flex-direction: column;
     padding: 2.4rem;
     margin: -2.4rem;
 
-    .project-image {
-      display: block;
-      width: 100%;
-      height: 150px;
-    }
-
-    .project-status {
-      &::after {
-        transform: none;
+    @media (min-resolution: 2dppx) and (min-width: 600px) {
+      .project-image {
+        background-image: linear-gradient(
+            to right,
+            transparent,
+            rgba($accent-color, 0.8)
+          ),
+          url("../../img/personal_planner_1400.png");
       }
     }
   }
@@ -53,8 +52,17 @@
 }
 
 .project-image {
-  flex: 1;
-  background-color: $main-color-lighter;
+  flex: 0 1 30%;
+  min-width: 150px;
+  min-height: 150px;
+  background-image: linear-gradient(
+      to right,
+      transparent,
+      rgba($main-color, 0.8)
+    ),
+    url("../../img/personal_planner_600w.png");
+  background-size: cover;
+  background-position: top left;
   border-radius: $border-radius;
 }
 
@@ -67,7 +75,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(-50%, -50%);
+    transform: translate(-30%, -50%);
     font-size: $font-size-xs;
     font-weight: 600;
     color: $main-color-dark;
