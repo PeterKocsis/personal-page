@@ -18,6 +18,21 @@
 
 .header-introduction {
     flex: 2;
+
+    .core-values {
+        margin-bottom: $element-gap;
+    }
+
+    .public-links {
+        display: none;
+        gap: 1rem;
+    }
+
+    @include respond-to("mobile") {
+        .public-links {
+            display: flex;
+        }
+    }
 }
 
 .header-summary {

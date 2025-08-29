@@ -15,9 +15,17 @@
   align-items: center;
   font-size: $font-size-large;
 
-  ul {
+  .public-links {
     list-style: none;
     display: flex;
+  }
+
+  @include respond-to("mobile") {
+    .public-links {
+      display: none;
+    }
+    justify-content: center;
+    gap: $element-gap;
   }
 }
 
