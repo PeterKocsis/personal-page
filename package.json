@@ -4,8 +4,11 @@
   "description": "My personal page for basic information and presenting my expertise in as Software Developer. Containing short bio, short work history, full CV, and projects and training pages too.",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass sass:css",
-    "watch:sass": "sass --watch sass:css"
+    "watch:sass": "sass --watch sass/main.scss:css/main.css",
+    "compile:sass": "sass sass/main.scss:css/main.compiled.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/main.compiled.css -o css/main.prefixed.css",
+    "compress:sass": "sass css/main.prefixed.css:css/main.css --style=compressed",
+    "build:css": "npm run compile:sass && npm run prefix:css && npm run compress:sass "
   },
   "repository": {
     "type": "git",
@@ -29,6 +32,9 @@
   },
   "homepage": "https://github.com/PeterKocsis/personal-page#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concat": "^1.0.3",
+    "postcss-cli": "^11.0.1",
     "sass": "^1.90.0"
   }
 }

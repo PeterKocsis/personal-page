@@ -67,6 +67,8 @@
   }
 
   &:hover {
+    background-color: $main-color-hover;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.3);
     .position-item {
       color: $text-color-highlight;
       .role-header {
@@ -98,8 +100,6 @@
         color: $main-color-dark;
       }
     }
-    background-color: $main-color-hover;
-    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.3);
   }
 }
 
@@ -127,7 +127,6 @@
       align-items: center;
       justify-content: space-between;
       margin-right: 3.2rem;
-
     }
 
     .position-details {
