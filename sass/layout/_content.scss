@@ -1,13 +1,12 @@
-
 @use "../abstracts/variables" as *;
 
 .centered-content {
-    max-width: 110rem;
-    width: 90%;
-    margin: 0 auto;
+  max-width: clamp(40rem, 112rem, 1200px);
+  padding: 1rem clamp(2rem, 3.2rem, 4.4rem);
+  margin: 0 auto;
 }
 
 .dark-background {
-    background-color: $main-color-dark;
-    z-index: 100;
+  background-color: $main-color-dark;
+  z-index: 100;
 }

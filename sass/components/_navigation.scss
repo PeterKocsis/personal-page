@@ -59,6 +59,7 @@
   height: 24px;
   @include respond-to("tablet-land") {
     height: 2rem;
+    width: 2rem;
   }
 }
 
