@@ -8,7 +8,11 @@
     "compile:sass": "sass sass/main.scss:css/main.compiled.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/main.compiled.css -o css/main.prefixed.css",
     "compress:sass": "sass css/main.prefixed.css:css/main.css --style=compressed",
-    "build:css": "npm run compile:sass && npm run prefix:css && npm run compress:sass "
+    "build:css": "npm run compile:sass && npm run prefix:css && npm run compress:sass",
+    "compile-critical:sass": "sass sass/critical.scss:css/critical.compiled.css",
+    "prefix-critical:css": "postcss --use autoprefixer -b 'last 10 versions' css/critical.compiled.css -o css/critical.prefixed.css",
+    "compress-critical:css": "sass css/critical.prefixed.css:css/critical.css --style=compressed",
+    "build-critical:css": "npm run compile-critical:sass && npm run prefix-critical:css && npm run compress-critical:css"
   },
   "repository": {
     "type": "git",
