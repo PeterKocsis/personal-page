@@ -80,7 +80,8 @@
           display: inline-block;
 
           @include respond-to("tablet-land") {
-            font-size: 2rem;
+            height: 2rem;
+            width: 2rem;
           }
         }
         .previous-role-title {

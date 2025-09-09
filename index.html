@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=open_in_new" />
     <link
         href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
@@ -238,7 +236,8 @@
 
         .navigation .public-links {
             list-style: none;
-            display: flex
+            display: flex;
+            align-items: flex-start
         }
 
         @media(max-width: 35em) {
@@ -299,8 +298,7 @@
         }
 
         .public-links .link-item {
-            transition: transform .2s;
-            height: 24px
+            transition: transform .2s
         }
 
         @media(max-width: 55.625em) {
@@ -318,12 +316,30 @@
             background-color: white;
             border-radius: .3rem;
             padding: .3rem;
-            align-items: center
+            align-items: center;
+            height: 24px
         }
 
         .public-links .item-background a {
             color: rgb(2.1, 9.24, 33.6);
             font-weight: 600
+        }
+
+        @media(max-width: 55.625em) {
+            .public-links .item-background {
+                height: 2rem
+            }
+        }
+
+        .mail-icon {
+            height: 26px
+        }
+
+        @media(max-width: 55.625em) {
+            .mail-icon {
+                height: 2.4rem;
+                width: 2.4rem
+            }
         }
 
         .position-items {
@@ -409,7 +425,8 @@
 
         @media(max-width: 55.625em) {
             .position-card:hover .position-item .role-header .open-link-icon {
-                font-size: 2rem
+                height: 2rem;
+                width: 2rem
             }
         }
 
@@ -678,6 +695,10 @@
                 <!-- <li class="nav-element"><a href="#courses">Courses</a></li> -->
             </ul>
             <ul class="public-links">
+                <li class="link-item"><a href="mailto:kopemi86@gmail.com" target="_blank">
+                        <img class="mail-icon" src="/icons/mail.svg" alt="kopemi86@gmail.com" loading="lazy">
+                    </a>
+                </li>
                 <li class="link-item">
                     <a href="https://github.com/PeterKocsis" target="_blank">
                         <img class="social-icon" src="/img/github-mark-white.png" height="24" width="24" loading="lazy"
@@ -705,6 +726,10 @@
                 <p class="core-values">I see every project as a chance to learn, improve, and create something
                     exceptional.</p>
                 <ul class="public-links">
+                    <li class="link-item"><a href="mailto:kopemi86@gmail.com" target="_blank">
+                            <img class="mail-icon" src="/icons/mail.svg" alt="Email Address" loading="lazy">
+                        </a>
+                    </li>
                     <li class="link-item">
                         <a href="https://github.com/PeterKocsis" target="_blank">
                             <img class="social-icon" src="/img/github-mark-white.png" alt="GitHub" width="24"
@@ -737,10 +762,6 @@
                     currently working on my own project — a time manager application — which allows me to apply and
                     deepen
                     both my frontend and backend skills.</p>
-
-                <!-- <p>Outside of work, I enjoy reading, archery, and playing Dungeons & Dragons, which help me stay
-                    creative
-                    and focused.</p> -->
             </div>
         </section>
     </header>
@@ -760,10 +781,9 @@
                             <div class="roles">
                                 <div class="role">
                                     <header class="role-header">
-                                        <h3 class="last-role-title">Frontend Engineer <span
-                                                class="material-symbols-rounded open-link-icon">
-                                                open_in_new
-                                            </span>
+                                        <h3 class="last-role-title">Frontend Engineer
+                                            <img class="open-link-icon" src="/icons/open_in_new.svg"
+                                                alt="Open in New Tab" loading="lazy">
                                         </h3>
                                         <p class="previous-role-title">Senior Software Engineer</p>
                                         <p class="previous-role-title">Software Engineer</p>
@@ -820,10 +840,10 @@
                             <div class="roles">
                                 <div class="role">
                                     <header class="role-header">
-                                        <h3 class="last-role-title">Windows Desktop Developer <span
-                                                class="material-symbols-rounded open-link-icon">
-                                                open_in_new
-                                            </span></h3>
+                                        <h3 class="last-role-title">Windows Desktop Developer <img
+                                                class="open-link-icon" src="/icons/open_in_new.svg"
+                                                alt="Open in New Tab" loading="lazy">
+                                        </h3>
                                         <p class="previous-role-title">Software Engineer</p>
                                     </header>
                                     <div class="details">
@@ -871,10 +891,9 @@
 
                                 <div class="role">
                                     <hgroup class="role-header">
-                                        <h3 class="last-role-title">Quality Assurance Engineer <span
-                                                class="material-symbols-rounded open-link-icon">
-                                                open_in_new
-                                            </span></h3>
+                                        <h3 class="last-role-title">Quality Assurance Engineer <img
+                                                class="open-link-icon" src="/icons/open_in_new.svg"
+                                                alt="Open in New Tab" loading="lazy"></h3>
                                         <p class="previous-role-title">Associate Quality Assurance Engineer</p>
                                     </hgroup>
                                     <div class="details">
@@ -926,10 +945,9 @@
                             <div class="roles">
                                 <div class="role">
                                     <header class="role-header">
-                                        <h3 class="last-role-title no-previous-role-title">Junior Software Tester <span
-                                                class="material-symbols-rounded open-link-icon">
-                                                open_in_new
-                                            </span>
+                                        <h3 class="last-role-title no-previous-role-title">Junior Software Tester <img
+                                                class="open-link-icon" src="/icons/open_in_new.svg"
+                                                alt="Open in New Tab" loading="lazy">
                                         </h3>
                                     </header>
                                     <div class="details">
@@ -1123,30 +1141,6 @@
                     </li>
                 </ul>
             </section>
-
-            <!-- <section id="interests" class="additional-section">
-                <h2 class="secondary-section-title">Interests</h2>
-                <ul class="interest-list">
-                    <li>
-                        <div class="interest-item">
-                            <p class="interest-name">Reading</p>
-                            <p class="interest-details">Fantasy, Sci-fi, Crime</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="interest-item">
-                            <p class="interest-name">Sports</p>
-                            <p class="interest-details">Olympic archery, Bicycling</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="interest-item">
-                            <p class="interest-name">Role-playing</p>
-                            <p class="interest-details">Dungeons & Dragons</p>
-                        </div>
-                    </li>
-                </ul>
-            </section> -->
         </div>
     </section>
 
@@ -1187,10 +1181,7 @@
 
     <div class="dark-background">
         <footer class="centered-content">
-            <div>
-                <p class="copyright-text">&copy; 2025 Peter Kocsis. All rights reserved.</p>
-                <a class="contact-email" href="mailto:kopemi86@gmail.com" target="_blank">kopemi86@gmail.com</a>
-            </div>
+            <p class="copyright-text">&copy; 2025 Peter Kocsis. All rights reserved.</p>
         </footer>
     </div>
 </body>

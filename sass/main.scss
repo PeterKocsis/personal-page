@@ -7,12 +7,6 @@
 @use "base/utilities" as *;
 @use "base/_base" as *;
 
-@use "components/resume" as *;
-@use "components/section-title" as *;
-@use "components/navigation" as *;
-@use "components/positions" as *;
-@use "components/course" as *;
-@use "components/skills" as *;
 @use "components/projects" as *;
 @use "components/education" as *;
 @use "components/languages" as *;
@@ -20,7 +14,5 @@
 @use "components/interest" as *;
 
 @use "layout/footer" as *;
-@use "layout/content" as *;
-@use "layout/header" as *;
 
 @use "pages/home" as *;
